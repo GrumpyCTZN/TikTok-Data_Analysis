@@ -40,7 +40,7 @@ sizes=list(newDict.values())
 
 plt.pie(sizes,labels=labels,autopct='%1.1f%%')
 plt.title('TikTok Chat Distribution')
-#plt.savefig('TikTokChatPieChart_beastmaster6420.png', dpi=300, bbox_inches='tight')
+#plt.savefig('TikTokChatPieChart.png', dpi=300, bbox_inches='tight')
 
 plt.show()
 
