@@ -5,12 +5,6 @@ import algorithms as alg
 jsonData=ld.loadFromFile()
 dateData=alg.pinpointDate(jsonData)
 
-try:
-    with open('test.json','w') as file:
-        json.dump(dateData,file,indent=4)
-    print("Sucessful")
-except IOError as e:
-    print(f"Error writing to file: {e}")
 
 specificDate=input("Date: ")
 if f"{specificDate}" in dateData:
