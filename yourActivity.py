@@ -1,4 +1,3 @@
-import loadJsonFile as ld
 import directory as dir
 
 def shareHistoryOutput(data):
@@ -7,8 +6,7 @@ def shareHistoryOutput(data):
         file.write(f"Share History\n\n")
         for shares in shareData:
             file.write(f"{shares['Date'][:10]}\t{shares['Link']}\n")
-
-
+            
 def searchHistroyOutput(data):
     searchData=dir.getDeepValue(data,('Your Activity','Searches','SearchList'))
     print(searchData[-1])
@@ -23,6 +21,4 @@ def watchHistoryOutput(data):
     with open('watchHistory.txt','w',encoding='utf-8') as file:
         file.write(f"Watch History\n\n")
         for watch in watchData:
-            file.write(f"{watch['Date'][:10]}\t{watch['Link']}\n")                  
-jsonData=ld.loadFromFile()
-watchHistoryOutput(jsonData)
+            file.write(f"{watch['Date'][:10]}\t{watch['Link']}\n")  

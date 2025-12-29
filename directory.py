@@ -1,6 +1,3 @@
-import loadJsonFile as ld
-import json
-
 #data is the main json Data and path is a list
 
 def getDeepValue(data,path):

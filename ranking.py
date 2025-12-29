@@ -1,8 +1,6 @@
 import loadJsonFile as ld
 import directory as dir
 import matplotlib.pyplot as plt
-import numpy as np
-
 
 def giveTotalChat(data):
     deepVal=dir.getDeepValue(data,('Direct Message','Direct Messages','ChatHistory'))
